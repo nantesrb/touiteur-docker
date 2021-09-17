@@ -7,7 +7,7 @@ ARG APP_USER_UID
 ARG APP_GROUP_GID
 
 RUN apt-get update -qq \
-  && apt-get install -y build-essential zlib1g-dev libssl-dev libreadline6-dev libcurl4-openssl-dev libxml2-dev libxslt-dev curl apt-transport-https git locales libsqlite3-dev
+  && apt-get install -y build-essential locales libsqlite3-dev
 
 RUN echo "fr_FR.UTF-8 UTF-8" >> /etc/locale.gen \
   && dpkg-reconfigure --frontend=noninteractive locales
