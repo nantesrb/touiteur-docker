@@ -8,6 +8,8 @@ Enfin, sachez que cette procédure d'installation n'est pas du tout représentat
 
 > :warning: Vous allez peut-être rencontrer des messages d'erreur pendant l'installation. Pas d'inquiétude : ils sont connus, et on sait comment les contourner. Tout ceci est expliqué plus bas.
 
+---
+
 ## 1. Installation de Docker
 
 1. Rendez-vous à l'adresse suivante : https://www.docker.com/products/docker-desktop
@@ -44,7 +46,11 @@ Enfin, sachez que cette procédure d'installation n'est pas du tout représentat
 
 7. L'installation de Docker est terminée. Félicitations !
 
+---
+
 ## 2. Mise en place de l'application Touiteur
+
+> *Touiteur* est l'application web que nous allons développer ensemble pendant la journée du samedi. Il s'agit d'une version *très* simplifiée de Twitter, que vous connaissez déjà.
 
 1. Télécharger le code source de l'application à cette adresse : https://github.com/nantesrb/touiteur-docker/archive/refs/heads/main.zip
 
@@ -83,6 +89,15 @@ Puis appuyez sur **Entrée**. Cette étape peut prendre plusieurs minutes, selon
 6. Depuis votre navigateur, rendez-vous à l'adresse http://localhost:3000. Vous devriez alors voir la page d'accueil suivante :
 
 ![](assets/windows-docker-11.png)
+
+---
+
+## 3. Installer un éditeur de code
+
+Nous recommandons l'utilisation des éditeurs suivants :
+
+- Sublime Text (léger et largement suffisant) : https://www.sublimetext.com/
+- VSCode (plus complet) : https://code.visualstudio.com/
 
 ---
 
