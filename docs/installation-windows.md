@@ -20,27 +20,37 @@ Enfin, sachez que cette procédure d'installation n'est pas du tout représentat
 
 4. Vérifiez que les options **Install required Windows components for WSL2** et **Add shortcut to desktop** sont sélectionnées, et cliquez sur **Ok**.
 
-![](assets/windows-docker-1.png)
+<p align="center">
+  <img src="assets/windows-docker-1.png" width="360" height="169">
+</p>
 
 5. Acceptez les conditions d'utilisation.
 
-![](assets/windows-docker-2.png)
+<p align="center">
+  <img src="assets/windows-docker-2.png" width="644" height="460">
+</p>
 
 6. Si vous rencontrez le message d'erreur suivant :
 
-![](assets/windows-docker-3.png)
+<p align="center">
+  <img src="assets/windows-docker-3.png" width="442" height="272">
+</p>
 
 - Cliquez sur **Continuer**
   
 - Cliquez sur le lien présent dans la boîte de dialogue (ne la fermez pas !) : https://docs.microsoft.com/fr-fr/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package
 
-![](assets/windows-docker-4.png)
+<p align="center">
+  <img src="assets/windows-docker-4.png" width="515" height="190">
+</p>
 
 - Cliquez sur le lien **Package de mise à jour du noyau Linux WSL2 pour machines x64**. Cela déclenchera le téléchargement d'un petit utilitaire qui va débloquer la situation.
 
 - Installer l'utilitaire **wsl_update_x64.msi**. Cette opération ne prend que quelques secondes.
 
-![](assets/windows-docker-5.png)
+<p align="center">
+  <img src="assets/windows-docker-5.png" width="386" height="300">
+</p>
 
 - Une fois l'utilitaire installé, vous pouvez cliquer sur le bouton **Restart** de la boîte de dialogue d'erreur apparue juste avant.
 
@@ -56,25 +66,33 @@ Enfin, sachez que cette procédure d'installation n'est pas du tout représentat
 
 2. Décompressez l'archive ZIP dans le répertoire de votre choix : clic-droit + **Extraire tout**.
 
-![](assets/windows-docker-6.png)
+<p align="center">
+  <img src="assets/windows-docker-6.png" width="320" height="150">
+</p>
 
 > :information_source: Dans la boîte de dialogue qui s'affiche, nous vous conseillons d'effacer la dernière partie `touiteur-docker-main` pour éviter que ce répertoire se retrouve en double.
 
-![](assets/windows-docker-7.png)
+<p align="center">
+  <img src="assets/windows-docker-7.png" width="440" height="366">
+</p>
 
-1. Dans la barre de recherche Windows, tapez **cmd**. Puis lancez l'application **Invite de commande** qui apparaît en résultat.
+3. Dans la barre de recherche Windows, tapez **cmd**. Puis lancez l'application **Invite de commande** qui apparaît en résultat.
 
-![](assets/windows-docker-8.png)
+<p align="center">
+  <img src="assets/windows-docker-8.png" width="590" height="510">
+</p>
 
-2. Dans la fenêtre **Invite de commandes**, tapez `cd`, espace, puis glissez / déposez le dossier `touiteur-docker-main`  à partir de l'explorateur de fichiers dans cette fenêtre.
+4. Dans la fenêtre **Invite de commandes**, tapez `cd`, espace, puis glissez / déposez le dossier `touiteur-docker-main`  à partir de l'explorateur de fichiers dans cette fenêtre.
 
 Vous devriez alors avoir quelque chose qui ressemble à ceci :
 
-![](assets/windows-docker-9.png)
+<p align="center">
+  <img src="assets/windows-docker-9.png" width="402" height="106">
+</p>
 
-3. Appuyez sur la touche **Entrée**.
+5. Appuyez sur la touche **Entrée**.
 
-4. Entrez ensuite la commande suivante :
+6. Entrez ensuite la commande suivante :
 
 ```
 docker-compose up --build
@@ -82,13 +100,17 @@ docker-compose up --build
 
 Puis appuyez sur **Entrée**. Cette étape peut prendre plusieurs minutes, selon la vitesse de votre connexion Internet.
 
-5. L'installation et la mise en place sont terminées une fois que vous voyez `Listening on http://0.0.0.0:3000` :
+7. L'installation et la mise en place sont terminées une fois que vous voyez la ligne suivante apparaître `Listening on http://0.0.0.0:3000` :
 
-![](assets/windows-docker-10.png)
+<p align="center">
+  <img src="assets/windows-docker-10.png" width="672" height="383">
+</p>
 
-6. Depuis votre navigateur, rendez-vous à l'adresse http://localhost:3000. Vous devriez alors voir la page d'accueil suivante :
+8. Depuis votre navigateur, rendez-vous à l'adresse http://localhost:3000. Vous devriez alors voir la page d'accueil suivante :
 
-![](assets/windows-docker-11.png)
+<p align="center">
+  <img src="assets/windows-docker-11.png" width="765" height="358">
+</p>
 
 ---
 
