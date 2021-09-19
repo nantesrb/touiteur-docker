@@ -1,0 +1,17 @@
+version: '3.6'
+
+services:
+  app:
+    image: jbiard/railsgirls:latest
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+      args:
+        - APP_USER_UID=501
+        - APP_GROUP_GID=20
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+    entrypoint: ["/app/docker/entrypoint"]
+    command: ["bundle", "exec", "rails", "s", "-b", "0.0.0.0"]
