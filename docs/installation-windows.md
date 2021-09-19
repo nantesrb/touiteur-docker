@@ -1,6 +1,6 @@
 # Installation de l'environnement de développement sur Windows
 
-Vous allez prochainement participer à une édition Rails Girls, et c'est une très chouette nouvelle. Pour bien préparer votre venue et gagner du temps le jour J, nous vous *recommandons* de suivre ces instructions, depuis chez vous, quelques jours avant l'évènement.
+Vous allez prochainement participer à une édition Rails Girls, et c'est une très chouette nouvelle. Pour bien préparer votre venue et gagner du temps le jour J, nous vous *recommandons* de suivre ces instructions, depuis chez vous, quelques jours avant l'évènement. Cette opération devrait prendre
 
 Si vous rencontrez le moindre problème ou avez la moindre question, n'hésitez pas à nous contacter par email : contact@rubynantes.org. Nous pourrons vous aider à distance et débloquer à peu près n'importe quelle situation.
 
@@ -21,19 +21,19 @@ Enfin, sachez que cette procédure d'installation n'est pas du tout représentat
 4. Vérifiez que les options **Install required Windows components for WSL2** et **Add shortcut to desktop** sont sélectionnées, et cliquez sur **Ok**.
 
 <p align="center">
-  <img src="assets/windows-docker-1.png" width="360" height="169">
+  <img src="assets/windows-docker-1.png" width="360">
 </p>
 
 5. Acceptez les conditions d'utilisation.
 
 <p align="center">
-  <img src="assets/windows-docker-2.png" width="644" height="460">
+  <img src="assets/windows-docker-2.png" width="644">
 </p>
 
 6. Si vous rencontrez le message d'erreur suivant :
 
 <p align="center">
-  <img src="assets/windows-docker-3.png" width="442" height="272">
+  <img src="assets/windows-docker-3.png" width="442">
 </p>
 
 - Cliquez sur **Continuer**
@@ -41,7 +41,7 @@ Enfin, sachez que cette procédure d'installation n'est pas du tout représentat
 - Cliquez sur le lien présent dans la boîte de dialogue (ne la fermez pas !) : https://docs.microsoft.com/fr-fr/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package
 
 <p align="center">
-  <img src="assets/windows-docker-4.png" width="515" height="190">
+  <img src="assets/windows-docker-4.png" width="515">
 </p>
 
 - Cliquez sur le lien **Package de mise à jour du noyau Linux WSL2 pour machines x64**. Cela déclenchera le téléchargement d'un petit utilitaire qui va débloquer la situation.
@@ -49,7 +49,7 @@ Enfin, sachez que cette procédure d'installation n'est pas du tout représentat
 - Installer l'utilitaire **wsl_update_x64.msi**. Cette opération ne prend que quelques secondes.
 
 <p align="center">
-  <img src="assets/windows-docker-5.png" width="386" height="300">
+  <img src="assets/windows-docker-5.png" width="386">
 </p>
 
 - Une fois l'utilitaire installé, vous pouvez cliquer sur le bouton **Restart** de la boîte de dialogue d'erreur apparue juste avant.
@@ -67,19 +67,19 @@ Enfin, sachez que cette procédure d'installation n'est pas du tout représentat
 2. Décompressez l'archive ZIP dans le répertoire de votre choix : clic-droit + **Extraire tout**.
 
 <p align="center">
-  <img src="assets/windows-docker-6.png" width="320" height="150">
+  <img src="assets/windows-docker-6.png" width="320">
 </p>
 
 > :information_source: Dans la boîte de dialogue qui s'affiche, nous vous conseillons d'effacer la dernière partie `touiteur-docker-main` pour éviter que ce répertoire se retrouve en double.
 
 <p align="center">
-  <img src="assets/windows-docker-7.png" width="440" height="366">
+  <img src="assets/windows-docker-7.png" width="440">
 </p>
 
 3. Dans la barre de recherche Windows, tapez **cmd**. Puis lancez l'application **Invite de commande** qui apparaît en résultat.
 
 <p align="center">
-  <img src="assets/windows-docker-8.png" width="590" height="510">
+  <img src="assets/windows-docker-8.png" width="590">
 </p>
 
 4. Dans la fenêtre **Invite de commandes**, tapez `cd`, espace, puis glissez / déposez le dossier `touiteur-docker-main`  à partir de l'explorateur de fichiers dans cette fenêtre.
@@ -87,7 +87,7 @@ Enfin, sachez que cette procédure d'installation n'est pas du tout représentat
 Vous devriez alors avoir quelque chose qui ressemble à ceci :
 
 <p align="center">
-  <img src="assets/windows-docker-9.png" width="402" height="106">
+  <img src="assets/windows-docker-9.png" width="402">
 </p>
 
 5. Appuyez sur la touche **Entrée**.
@@ -103,20 +103,20 @@ Puis appuyez sur **Entrée**. Cette étape peut prendre plusieurs minutes, selon
 7. L'installation et la mise en place sont terminées une fois que vous voyez la ligne suivante apparaître `Listening on http://0.0.0.0:3000` :
 
 <p align="center">
-  <img src="assets/windows-docker-10.png" width="672" height="383">
+  <img src="assets/windows-docker-10.png" width="672">
 </p>
 
 8. Depuis votre navigateur, rendez-vous à l'adresse http://localhost:3000. Vous devriez alors voir la page d'accueil suivante :
 
 <p align="center">
-  <img src="assets/windows-docker-11.png" width="765" height="358">
+  <img src="assets/windows-docker-11.png" width="765">
 </p>
 
 ---
 
 ## 3. Installer un éditeur de code
 
-Nous recommandons l'utilisation des éditeurs suivants :
+Nous vous recommandons d'installer l'un des éditeurs suivants :
 
 - Sublime Text (léger et largement suffisant) : https://www.sublimetext.com/
 - VSCode (plus complet) : https://code.visualstudio.com/
