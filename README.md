@@ -1,19 +1,11 @@
-# README
+# Rails Girls
 
-## CHARGEMENT DE L'IMAGE DEPUIS LE DISQUE
+Bienvenue dans cette nouvelle édition de Rails Girls !
 
-```
-docker load -i railsgirls.docker
-```
+Vous trouverez ici toutes les instructions pour installer votre environnement de développement, ainsi que les étapes pour construire votre première application web avec Ruby on Rails.
 
-## LANCEMENT
-
-```
-docker-compose up --build
-```
-
-## LANCEMENT LIGNE DE COMMANDE
-
-```
-docker-compose exec app bash
-```
+Chapitre | Description
+-------- | -----------
+Manuel d'installation pour Windows | Suivez ces instructions pour installer votre environnement de développement sur Windows.
+Manuel d'installation pour macOS | Suivez ces instructions pour installer votre environnement de développement sur macOS.
+Le projet Touiteur | Étape par étape, nous vous indiquons comment construire votre première application web.
