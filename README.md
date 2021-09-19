@@ -6,6 +6,6 @@ Vous trouverez ici toutes les instructions pour installer votre environnement de
 
 Chapitre | Description
 -------- | -----------
-Manuel d'installation pour Windows | Suivez ces instructions pour installer votre environnement de développement sur Windows.
-Manuel d'installation pour macOS | Suivez ces instructions pour installer votre environnement de développement sur macOS.
-Le projet Touiteur | Étape par étape, nous vous indiquons comment construire votre première application web.
+**[Manuel d'installation pour Windows](docs/installation-windows.md)** | Suivez ces instructions pour installer votre environnement de développement sur Windows.
+**[Manuel d'installation pour macOS](docs/installation-macos.md)** | Suivez ces instructions pour installer votre environnement de développement sur macOS.
+**[Construire l'application Touiteur](docs/instructions.md)** | Étape par étape, nous vous indiquons comment construire votre première application web.
