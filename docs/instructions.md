@@ -169,6 +169,12 @@ irb(main):001:0> message = Message.new(author: "Alice", content: "Coucou !")
 irb(main):002:0> message.save
 ```
 
+> :information_source: Astuce : on peut combiner les deux lignes de code en faisant directement : 
+> 
+> ```irb
+> Message.create(author: "Alice", content: "Coucou !")
+> ```
+
 Si tout se passe bien, vous devriez voir la requête SQL d'insertion d'un enregistrement dans la table `messages`. Est-ce bien le cas ?
 
 Et si vous rafraîchissez la page http://localhost:3000/messages, vous devriez également voir apparaître votre nouveau message.
@@ -180,12 +186,6 @@ irb(main):002:0> exit
 ```
 
 Maintenant que nous savons comment créer de nouveaux messages à partir de la console Rails, voyons comment faire la même chose, mais à l'aide d'un formulaire web.
-
-> :information_source: Astuce : on peut combiner les deux lignes de code en faisant directement : 
-> 
-> ```irb
-> Message.create(author: "Alice", content: "Coucou !")
-> ```
 
 ### 1. Édition du contrôleur
 
