@@ -41,7 +41,7 @@ Cela signifie que vous devez entrer la commande `rails db:migrate` puis appuyer 
 
 Nous avons déjà inséré pour vous des messages en base de données. L'objectif de ce premier exercice est de les afficher dans une simple page HTML. Pour cela, nous allons procéder en 4 étapes.
 
-### 3. Créer le modèle `Message`
+### 1. Créer le modèle `Message`
 
 Notre application sera centrée sur la notion de message. C'est donc tout naturellement que nous allons créer un modèle `Message`. Pour commencer, nous allons considérer qu'un message est constitué :
 - d'un contenu (texte)
@@ -97,7 +97,7 @@ class MessagesController < ApplicationController
 
   # GET /messages
   def index
-    # # TODO: Récupérer la liste des messages présents en base de données.
+    # TODO: Récupérer la liste des messages présents en base de données.
   end
 
 end
@@ -105,11 +105,7 @@ end
 
 Indications :
 - Pour récupérer la liste des messages présents en base de données, vous pouvez utiliser `Message.all`.
-- Pour stocker un résultat dans une variable Ruby, on utilise tout simplement l'opérateur `=`. Par exemple, pour stocker la valeur `42` dans une variable `@response` : 
-
-```ruby
-@response = 42
-```
+- Pour stocker un résultat dans une variable Ruby, on utilise tout simplement l'opérateur `=`. Par exemple, pour stocker la valeur `42` dans une variable `@response` on fera : `@response = 42`.
 
 ### 4. Créer une vue dynamique HTML
 
@@ -173,6 +169,12 @@ irb(main):001:0> message = Message.new(author: "Alice", content: "Coucou !")
 irb(main):002:0> message.save
 ```
 
+> :information_source: Astuce : on peut combiner les deux lignes de code en faisant directement : 
+> 
+> ```irb
+> Message.create(author: "Alice", content: "Coucou !")
+> ```
+
 Si tout se passe bien, vous devriez voir la requête SQL d'insertion d'un enregistrement dans la table `messages`. Est-ce bien le cas ?
 
 Et si vous rafraîchissez la page http://localhost:3000/messages, vous devriez également voir apparaître votre nouveau message.
@@ -184,12 +186,6 @@ irb(main):002:0> exit
 ```
 
 Maintenant que nous savons comment créer de nouveaux messages à partir de la console Rails, voyons comment faire la même chose, mais à l'aide d'un formulaire web.
-
-> :information_source: Astuce : on peut combiner les deux lignes de code en faisant directement : 
-> 
-> ```irb
-> Message.create(author: "Alice", content: "Coucou !")
-> ```
 
 ### 1. Édition du contrôleur
 
@@ -247,10 +243,14 @@ Le formulaire de création de message sera accessible *via* la route `/messages/
 ```erb
 <h1>Nouveau message</h1>
 <%= form_for @message do |form| %>
-  <%= form.label :content, 'Contenu' %>
-  <%= form.text_area :content %>
-  <%= form.label :author, 'Auteur' %>
-  <%= form.text_field :author %>
+  <div>
+    <%= form.label :content, 'Contenu' %>
+    <%= form.text_area :content %>
+  </div>
+  <div>
+    <%= form.label :author, 'Auteur' %>
+    <%= form.text_field :author %>
+  </div>
   <%= form.submit 'Valider' %>
 <% end %>
 ```
@@ -286,7 +286,7 @@ Mais ce n'est pas la meilleure façon de faire un site web dynamique. On préfé
 Par exemple, si on voulait insérer un lien vers une liste d'utilisateurs :
 
 ```erb
-<%= link_to users_path, "Lise des utilisateurs" %>
+<%= link_to "Liste des utilisateurs", users_path %>
 ```
 
 ---
@@ -352,10 +352,14 @@ Il ne reste plus qu'à prévenir l'utilisateur que son message ne peut pas être
 <h1>Nouveau message</h1>
 <!-- TODO: Afficher ici les éventuels messages d'erreur. -->
 <%= form_for @message do |form| %>
-  <%= form.label :content, 'Contenu' %>
-  <%= form.text_area :content %>
-  <%= form.label :author, 'Auteur' %>
-  <%= form.text_field :author %>
+  <div>
+    <%= form.label :content, 'Contenu' %>
+    <%= form.text_area :content %>
+  </div>
+  <div>
+    <%= form.label :author, 'Auteur' %>
+    <%= form.text_field :author %>
+  </div>
   <%= form.submit 'Valider' %>
 <% end %>
 ```
@@ -439,10 +443,10 @@ Pour insérer un lien vers un message, Ruby on Rails vous donne plusieurs possib
 
 ```ruby
 # Méthode 1
-link_to @message, "Accéder au détail"
+link_to "Accéder au détail", @message
 
 # Méthode 2, plus concise
-link_to message_path(@message), "Accéder au détail"
+link_to "Accéder au détail", message_path(@message)
 ```
 
 En bonus, essayez d'ajouter un lien qui permet de revenir sur la page de liste des messages à partir de la page de détail.
@@ -490,8 +494,10 @@ Il nous faut désormais ajouter un nouveau champ de sélection de fichier dans l
 ```erb
 <%= form_for @message do |form| %>
   <!-- ... -->
-  <%= form.label :image, 'Image' %>
-  <%= form.file_field :image %>
+  <div>
+    <%= form.label :image, 'Image' %>
+    <%= form.file_field :image %>
+  </div>
   <!-- ... -->
 <% end %>
 ```

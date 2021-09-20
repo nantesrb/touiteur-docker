@@ -46,7 +46,7 @@ Enfin, sachez que cette procédure d'installation n'est pas du tout représentat
 
 > :information_source: Vous pouvez également trouver l'application **Terminal** dans le répertoire **Applications** situé à la racine.
 
-4. Dans la fenêtre **Terminale**, tapez `cd`, espace, puis glissez / déposez le dossier `touiteur-docker-main` à partir de l'explorateur de fichiers dans cette fenêtre.
+4. Dans la fenêtre **Terminal**, tapez `cd`, espace, puis glissez / déposez le dossier `touiteur-docker-main` à partir de l'explorateur de fichiers dans cette fenêtre.
 
 Vous devriez alors avoir quelque chose qui ressemble à ceci :
 
