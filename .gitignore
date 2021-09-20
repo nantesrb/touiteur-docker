@@ -32,3 +32,4 @@
 railsgirls.docker
 
 .DS_Store
+/storage
