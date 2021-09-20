@@ -286,7 +286,7 @@ Mais ce n'est pas la meilleure façon de faire un site web dynamique. On préfé
 Par exemple, si on voulait insérer un lien vers une liste d'utilisateurs :
 
 ```erb
-<%= link_to users_path, "Lise des utilisateurs" %>
+<%= link_to users_path, "Liste des utilisateurs" %>
 ```
 
 ---
