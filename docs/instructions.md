@@ -41,7 +41,7 @@ Cela signifie que vous devez entrer la commande `rails db:migrate` puis appuyer 
 
 Nous avons déjà inséré pour vous des messages en base de données. L'objectif de ce premier exercice est de les afficher dans une simple page HTML. Pour cela, nous allons procéder en 4 étapes.
 
-### 3. Créer le modèle `Message`
+### 1. Créer le modèle `Message`
 
 Notre application sera centrée sur la notion de message. C'est donc tout naturellement que nous allons créer un modèle `Message`. Pour commencer, nous allons considérer qu'un message est constitué :
 - d'un contenu (texte)
