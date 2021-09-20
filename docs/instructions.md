@@ -286,7 +286,7 @@ Mais ce n'est pas la meilleure façon de faire un site web dynamique. On préfé
 Par exemple, si on voulait insérer un lien vers une liste d'utilisateurs :
 
 ```erb
-<%= link_to users_path, "Liste des utilisateurs" %>
+<%= link_to "Liste des utilisateurs", users_path %>
 ```
 
 ---
@@ -443,10 +443,10 @@ Pour insérer un lien vers un message, Ruby on Rails vous donne plusieurs possib
 
 ```ruby
 # Méthode 1
-link_to @message, "Accéder au détail"
+link_to "Accéder au détail", @message
 
 # Méthode 2, plus concise
-link_to message_path(@message), "Accéder au détail"
+link_to "Accéder au détail", message_path(@message)
 ```
 
 En bonus, essayez d'ajouter un lien qui permet de revenir sur la page de liste des messages à partir de la page de détail.
