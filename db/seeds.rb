@@ -1,4 +1,4 @@
-if defined(Message) && Message.none?
+if defined?(Message) && Message.none?
   Message.create!(
     author: "Alexandre Vialatte",
     content: "Sauf erreur, je ne me trompe jamais."
