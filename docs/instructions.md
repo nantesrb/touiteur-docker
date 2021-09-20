@@ -243,10 +243,14 @@ Le formulaire de création de message sera accessible *via* la route `/messages/
 ```erb
 <h1>Nouveau message</h1>
 <%= form_for @message do |form| %>
-  <%= form.label :content, 'Contenu' %>
-  <%= form.text_area :content %>
-  <%= form.label :author, 'Auteur' %>
-  <%= form.text_field :author %>
+  <div>
+    <%= form.label :content, 'Contenu' %>
+    <%= form.text_area :content %>
+  </div>
+  <div>
+    <%= form.label :author, 'Auteur' %>
+    <%= form.text_field :author %>
+  </div>
   <%= form.submit 'Valider' %>
 <% end %>
 ```
@@ -348,10 +352,14 @@ Il ne reste plus qu'à prévenir l'utilisateur que son message ne peut pas être
 <h1>Nouveau message</h1>
 <!-- TODO: Afficher ici les éventuels messages d'erreur. -->
 <%= form_for @message do |form| %>
-  <%= form.label :content, 'Contenu' %>
-  <%= form.text_area :content %>
-  <%= form.label :author, 'Auteur' %>
-  <%= form.text_field :author %>
+  <div>
+    <%= form.label :content, 'Contenu' %>
+    <%= form.text_area :content %>
+  </div>
+  <div>
+    <%= form.label :author, 'Auteur' %>
+    <%= form.text_field :author %>
+  </div>
   <%= form.submit 'Valider' %>
 <% end %>
 ```
@@ -486,8 +494,10 @@ Il nous faut désormais ajouter un nouveau champ de sélection de fichier dans l
 ```erb
 <%= form_for @message do |form| %>
   <!-- ... -->
-  <%= form.label :image, 'Image' %>
-  <%= form.file_field :image %>
+  <div>
+    <%= form.label :image, 'Image' %>
+    <%= form.file_field :image %>
+  </div>
   <!-- ... -->
 <% end %>
 ```
