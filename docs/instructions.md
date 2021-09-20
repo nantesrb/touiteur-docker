@@ -97,7 +97,7 @@ class MessagesController < ApplicationController
 
   # GET /messages
   def index
-    # # TODO: Récupérer la liste des messages présents en base de données.
+    # TODO: Récupérer la liste des messages présents en base de données.
   end
 
 end
