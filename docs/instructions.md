@@ -105,11 +105,7 @@ end
 
 Indications :
 - Pour récupérer la liste des messages présents en base de données, vous pouvez utiliser `Message.all`.
-- Pour stocker un résultat dans une variable Ruby, on utilise tout simplement l'opérateur `=`. Par exemple, pour stocker la valeur `42` dans une variable `@response` : 
-
-```ruby
-@response = 42
-```
+- Pour stocker un résultat dans une variable Ruby, on utilise tout simplement l'opérateur `=`. Par exemple, pour stocker la valeur `42` dans une variable `@response` on fera : `@response = 42`.
 
 ### 4. Créer une vue dynamique HTML
 
