@@ -13,9 +13,12 @@ Enfin, sachez que cette procédure d'installation n'est pas du tout représentat
 1. Rendez-vous à l'adresse suivante : https://www.docker.com/products/docker-desktop
 
 2. Si vous possédez un mac avec processeur M1, cliquez sur le bouton **Download for Mac with Apple Chip**. Sinon, cliquez sur le bouton **Download for Mac with Intel Chip**
-> :information_source: Pour savoir si vous possédez un processeur M1 rendez-vous dans le menu Apple(Pomme) -> 'A propos de ce Mac'
+> :information_source: Pour savoir si vous possédez un processeur M1 rendez-vous dans le menu Apple(Pomme) -> 'A propos de ce Mac' ([Procédure Apple](https://support.apple.com/fr-fr/HT211814))
 <p align="center">
   <img src="assets/macos-docker-apropos.png" width="644">
+</p>
+<p align="center">
+  <img src="assets/macos-docker-puceM1.png" width="644">
 </p>
 
 1. Une fois téléchargé, lancez le programme d'installation **Docker.dmg**, et déplacer le programme **Docker** dans le répertoire **Applications** comme suggéré.
