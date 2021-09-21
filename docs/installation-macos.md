@@ -21,13 +21,13 @@ Enfin, sachez que cette procédure d'installation n'est pas du tout représentat
   <img src="assets/macos-docker-puceM1.png" width="644">
 </p>
 
-1. Une fois téléchargé, lancez le programme d'installation **Docker.dmg**, et déplacer le programme **Docker** dans le répertoire **Applications** comme suggéré.
+3. Une fois téléchargé, lancez le programme d'installation **Docker.dmg**, et déplacer le programme **Docker** dans le répertoire **Applications** comme suggéré.
 
 <p align="center">
   <img src="assets/macos-docker-1.png" width="788">
 </p>
 
-1. Lancez l'application **Docker** et acceptez les conditions d'utilisation.
+4. Lancez l'application **Docker** et acceptez les conditions d'utilisation.
 
 <p align="center">
   <img src="assets/windows-docker-2.png" width="644">
