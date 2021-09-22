@@ -69,9 +69,9 @@ Pour exécuter le script de migration de la base de données, qui va créer la t
 
 On souhaite que les visiteurs puissent accéder à l'URL `http://localhost:3000/messages` pour afficher la liste des message. Il faut donc configurer l'application pour qu'elle reconnaisse la route `/messages`.
 
-Pour cela, on édite le fichier `config/router.rb` comme suit :
+Pour cela, on édite le fichier `config/routes.rb` comme suit :
 
-📄 `config/router.rb`
+📄 `config/routes.rb`
 
 ```ruby
 Rails.application.routes.draw do
