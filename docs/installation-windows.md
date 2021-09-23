@@ -38,15 +38,7 @@ Enfin, sachez que cette procédure d'installation n'est pas du tout représentat
 
 - Cliquez sur **Continuer**
   
-- Cliquez sur le lien présent dans la boîte de dialogue (ne la fermez pas !) : https://docs.microsoft.com/fr-fr/windows/wsl/install-win10#step-4---download-the-linux-kernel-update-package
-
-<p align="center">
-  <img src="assets/windows-docker-4.png" width="515">
-</p>
-
-- Cliquez sur le lien **Package de mise à jour du noyau Linux WSL2 pour machines x64**. Cela déclenchera le téléchargement d'un petit utilitaire qui va débloquer la situation.
-
-- Installer l'utilitaire **wsl_update_x64.msi**. Cette opération ne prend que quelques secondes.
+- Télécharger et installer l'utilitaire  **wsl_update_x64.msi** à cette adresse : https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
 
 <p align="center">
   <img src="assets/windows-docker-5.png" width="386">
